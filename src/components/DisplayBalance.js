@@ -5,7 +5,7 @@ function DisplayBalance({ size, color, value, label }) {
  return (
   <Statistic size={size} color={color}>
    <Statistic.Label style={{ textAlign: "left" }}>{label}</Statistic.Label>
-   <Statistic.Value>{value}</Statistic.Value>
+   <Statistic.Value>${value}</Statistic.Value>
   </Statistic>
  );
 }
