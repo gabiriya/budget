@@ -29,6 +29,7 @@ function App() {
    setEntries(newEntries);
    resetEntry();
   }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
  }, [isOpen]);
 
  useEffect(() => {
@@ -40,7 +41,6 @@ function App() {
   });
   console.log(`total income : ${totalIncome}`);
   console.log(`total expenses : ${totalExpenses}`);
-  let total = totalIncome - totalExpenses;
   setTotal(totalIncome - totalExpenses);
   setTotalIncome(totalIncome);
   setTotalExpenses(totalExpenses);
